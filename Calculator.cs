@@ -17,15 +17,15 @@ public class Calculator
             double num1, num2, result = 0;
             bool validOperation = true;
 
-            // Handle the user's selection
+            
             switch (choice)
             {
-                case "0":  // Cancel operation
+                case "0":  
                     continueCalculator = false;
                     Console.WriteLine("\nExiting the calculator. Goodbye!");
                     break;
 
-                case "1": // Addition
+                case "1": 
                     Console.Write("Enter the first number: ");
                     num1 = GetNumberInput();
                     Console.Write("Enter the second number: ");
@@ -34,7 +34,7 @@ public class Calculator
                     Console.WriteLine($"\nResult: {num1} + {num2} = {result}");
                     break;
 
-                case "2": // Subtraction
+                case "2": 
                     Console.Write("Enter the first number: ");
                     num1 = GetNumberInput();
                     Console.Write("Enter the second number: ");
@@ -43,7 +43,7 @@ public class Calculator
                     Console.WriteLine($"\nResult: {num1} - {num2} = {result}");
                     break;
 
-                case "3": // Multiplication
+                case "3": 
                     Console.Write("Enter the first number: ");
                     num1 = GetNumberInput();
                     Console.Write("Enter the second number: ");
@@ -52,7 +52,7 @@ public class Calculator
                     Console.WriteLine($"\nResult: {num1} * {num2} = {result}");
                     break;
 
-                case "4": // Division
+                case "4":
                     Console.Write("Enter the first number: ");
                     num1 = GetNumberInput();
                     Console.Write("Enter the second number: ");
