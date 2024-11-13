@@ -10,17 +10,22 @@ public class Calculator
         {
             Console.Clear();
             DisplayMenu();
-            
-            Console.Write("Select an operator from the menu above: ");
+
+            Console.Write("Select an option from the menu above: ");
             string choice = Console.ReadLine();
 
             double num1, num2, result = 0;
             bool validOperation = true;
 
-            // Take input for numbers based on the user's selection
+            // Handle the user's selection
             switch (choice)
             {
-                case "1":
+                case "0":  // Cancel operation
+                    continueCalculator = false;
+                    Console.WriteLine("\nExiting the calculator. Goodbye!");
+                    break;
+
+                case "1": // Addition
                     Console.Write("Enter the first number: ");
                     num1 = GetNumberInput();
                     Console.Write("Enter the second number: ");
@@ -29,7 +34,7 @@ public class Calculator
                     Console.WriteLine($"\nResult: {num1} + {num2} = {result}");
                     break;
 
-                case "2":
+                case "2": // Subtraction
                     Console.Write("Enter the first number: ");
                     num1 = GetNumberInput();
                     Console.Write("Enter the second number: ");
@@ -38,7 +43,7 @@ public class Calculator
                     Console.WriteLine($"\nResult: {num1} - {num2} = {result}");
                     break;
 
-                case "3":
+                case "3": // Multiplication
                     Console.Write("Enter the first number: ");
                     num1 = GetNumberInput();
                     Console.Write("Enter the second number: ");
@@ -47,7 +52,7 @@ public class Calculator
                     Console.WriteLine($"\nResult: {num1} * {num2} = {result}");
                     break;
 
-                case "4":
+                case "4": // Division
                     Console.Write("Enter the first number: ");
                     num1 = GetNumberInput();
                     Console.Write("Enter the second number: ");
@@ -70,22 +75,20 @@ public class Calculator
                     break;
             }
 
-            if (validOperation)
+            if (validOperation && choice != "0")
             {
                 Console.WriteLine("\nOperation completed successfully.");
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadKey();
             }
-
-            Console.Write("\nDo you want to perform another operation? (y/n): ");
-            continueCalculator = Console.ReadLine().ToLower() == "y";
         }
-
-        Console.WriteLine("\nThank you for using the calculator. Goodbye!");
     }
 
     private void DisplayMenu()
     {
         Console.WriteLine("Welcome to the Mini Calculator!");
         Console.WriteLine("Please choose an operation:");
+        Console.WriteLine("0. Cancel");
         Console.WriteLine("1. Addition (+)");
         Console.WriteLine("2. Subtraction (-)");
         Console.WriteLine("3. Multiplication (*)");
