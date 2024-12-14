@@ -8,24 +8,31 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\abbed\\.nuget\\packages\\": {}
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abbed\\Desktop\\LastYear\\C#\\c-mini-calculator\\c-mini-calculator.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\C#\\c-mini-calculator\\c-mini-calculator.csproj",
       "projectName": "c-mini-calculator",
-      "projectPath": "C:\\Users\\abbed\\Desktop\\LastYear\\C#\\c-mini-calculator\\c-mini-calculator.csproj",
-      "packagesPath": "C:\\Users\\abbed\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abbed\\Desktop\\LastYear\\C#\\c-mini-calculator\\obj\\",
+      "projectPath": "C:\\Users\\Lenovo\\Desktop\\C#\\c-mini-calculator\\c-mini-calculator.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lenovo\\Desktop\\C#\\c-mini-calculator\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\abbed\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
